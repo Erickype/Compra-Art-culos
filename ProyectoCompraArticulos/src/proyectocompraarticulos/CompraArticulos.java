@@ -18,8 +18,13 @@ public class CompraArticulos {
         // TODO code application logic here
         System.out.println("Lo hicimos !!");
         System.out.println("Ahora que pasó!!");
-        //steeven
+        leninrkb
+        for (int i = 0; i < 100; i++) {
+            System.out.println("xd");
+        }
+     //steeven
         System.out.println("Este comentario es de Steeven Lopez");
+
     }
     
 }
