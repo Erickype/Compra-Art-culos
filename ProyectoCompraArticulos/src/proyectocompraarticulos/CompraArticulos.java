@@ -18,6 +18,9 @@ public class CompraArticulos {
         // TODO code application logic here
         System.out.println("Lo hicimos !!");
         System.out.println("Ahora que pasó!!");
+        for (int i = 0; i < 100; i++) {
+            System.out.println("xd");
+        }
     }
     
 }
