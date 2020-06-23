@@ -18,6 +18,7 @@ public class CompraArticulos {
         // TODO code application logic here
         System.out.println("Lo hicimos !!");
         System.out.println("Ahora que pasó!!");
+        System.out.println("tengo hambre");
     }
     
 }
