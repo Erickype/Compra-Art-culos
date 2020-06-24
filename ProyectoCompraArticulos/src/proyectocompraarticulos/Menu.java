@@ -10,5 +10,5 @@ package proyectocompraarticulos;
  * @author Erick
  */
 public class Menu {
-    
+    //menu here
 }
