@@ -16,14 +16,8 @@ public class CompraArticulos {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Lo hicimos !!");
-        System.out.println("Ahora que pasó!!");
-        //leninrkb
-        for (int i = 0; i < 100; i++) {
-            System.out.println("xd");
-        }
-     //steeven
-        System.out.println("Este comentario es de Steeven Lopez");
+        Menu m = new Menu();
+        m.menu();
 
     }
     

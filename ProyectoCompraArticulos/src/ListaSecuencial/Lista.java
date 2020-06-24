@@ -161,7 +161,10 @@ public class Lista {
         return false;
     }
 
-    void imprimir() {
+    public void listar() {
+        if (this.primero == null) {
+            System.out.println("ERROR: *** No existen datos en la lista *** ");
+        }
         if (this.primero != null) {
             Nodo aux = this.primero;
             do {
