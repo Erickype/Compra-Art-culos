@@ -160,7 +160,8 @@ public class Lista {
         }
         return false;
     }
-boolean Eliminar_Borrar(int pos ) {
+
+    boolean Eliminar_Borrar(int pos ) {
         if (this.primero == null || pos < 0) {
             return false;
         }
