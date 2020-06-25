@@ -29,15 +29,17 @@ public class Menu {
             n = t.nextInt();
             switch (n) {
                 case 1:
+                    System.out.printf("%15s\n\n", " - VENTA DE PRODUCTOS - ");
                     //Metodo ventas
-                    
+
                     break;
                 case 2:
+                    System.out.printf("%15s\n\n", " - SUBMENU CONTROL INVENTARIOS - ");
                     //Metodo sub menu inventario
                     subMenuInv();
                     break;
                 case 3:
-                    System.out.printf("%63s\n\n", "  ->  SALIENDO . . . ");
+                    System.out.printf("%63s\n\n", "  ->  SALIENDO . . . ");                    
                     break;
                 default:
                     System.out.println("ERROR: *** Opciones validas solo desde  1 al 3 *** ");
@@ -64,24 +66,28 @@ public class Menu {
             Lista l = new Lista();
             switch (n) {
                 case 1:
+                    System.out.printf("%15s\n\n", " - AGREGAR PRODUCTO - ");
                     //Metodo agregar producto
-                    
+
                     break;
                 case 2:
+                    System.out.printf("%15s\n\n", " - BORRAR PRODUCTO - ");
                     //Metodo borrar producto
-                    
+
                     break;
                 case 3:
+                    System.out.printf("%15s\n\n", " - MODIFICAR PRODUCTO - ");
                     //Metodo modificar producto
-                    
+
                     break;
                 case 4:
+                    System.out.printf("%15s\n\n", " - LISTADO DE PRODUCTOS - ");
                     //Metodo listar productos
-                                        l.listar();
+                    l.listar();
                     break;
                 case 5:
                     //regreso al menu principal, metodo menu
-                    System.out.println("Retrocediendo ...");
+                    System.out.println("** Retrocediendo ...");
                     menu();
                     break;
 
