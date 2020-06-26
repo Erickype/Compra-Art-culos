@@ -10,9 +10,11 @@ public class Menu {
     public void menu() {
         int n;
         do {
-            System.out.printf("\n%20s%s\n"
+            System.out.printf("\n%18s%s\n"
+                    + "%20s%s\n"
                     + "%20s%s\n"
                     + "%20s%s\n",
+                    "", " - MENU PRINCIPAL - ",
                     "", "1.- Ventas",
                     "", "2.- Control inventario",
                     "", "3.- **SALIR**\n");
