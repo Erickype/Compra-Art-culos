@@ -12,7 +12,7 @@ import ClasesArticulos.ListaArticulosComprados;
  *
  * @author Erick
  */
-public class GestorArticulosSolicitados {
+public class GestorArticulos {
     private ListaArticulos articulos;
     private ListaArticulosComprados articulosComprados;
     

@@ -1,14 +1,14 @@
 
 package proyectocompraarticulos;
 
+import GestorArticulos.GestorArticulos;
 import ListaSecuencial.Lista;
 import java.util.Scanner;
 
 public class Menu {
 
-    Scanner t = new Scanner(System.in);
-
-    public void menu() {
+    public static void menuGeneral(GestorArticulos gestor) {
+        Scanner t = new Scanner(System.in);
         int n;
         do {
             System.out.printf("\n%18s%s\n"
@@ -41,13 +41,14 @@ public class Menu {
         } while (n != 3);
 
     }
-    
-    public void ventas(){
+
+    private static void ventas() {
         System.out.println("\tVenta de Artículos");
-        
+
     }
 
-    public void subMenuInv() {
+    private static void subMenuInv() {
+        Scanner t = new Scanner(System.in);
         int n;
         do {
             System.out.printf("\n%20s%s\n"
@@ -87,7 +88,6 @@ public class Menu {
                 case 5:
                     //regreso al menu principal, metodo menu
                     System.out.println("** Retrocediendo ...");
-                    menu();
                     break;
 
                 default:

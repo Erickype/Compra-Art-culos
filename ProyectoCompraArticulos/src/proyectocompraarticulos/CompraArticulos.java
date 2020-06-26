@@ -5,6 +5,8 @@
  */
 package proyectocompraarticulos;
 
+import GestorArticulos.GestorArticulos;
+
 /**
  *
  * @author Erick
@@ -16,8 +18,8 @@ public class CompraArticulos {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Menu m = new Menu();
-        m.menu();
+        GestorArticulos gestor=new GestorArticulos();
+        Menu.menuGeneral(gestor);
     }
     
 }
