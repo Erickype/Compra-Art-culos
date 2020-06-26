@@ -1,3 +1,4 @@
+
 package proyectocompraarticulos;
 
 import ListaSecuencial.Lista;
@@ -94,5 +95,4 @@ public class Menu {
             }
         } while (n != 5);
     }
-
 }
