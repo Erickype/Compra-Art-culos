@@ -1,4 +1,5 @@
 package ListaSecuencial;
+import java.util.Scanner ;
 
 /**
  *
@@ -182,6 +183,18 @@ public class Lista {
         } else {
             return false;
         }
+    }
+    
+    
+     public Object borrarEliminar() {
+         
+        int a = 0;
+        
+         System.out.println("ingrese la posicion a eliminar");
+         Scanner teclado= new Scanner(System.in);
+         a= teclado.nextInt();
+         eliminarBorrar(a );
+         return a;
     }
 
     public void modificar(String dato, String cambio) {
