@@ -24,7 +24,7 @@ public class Menu {
                 case 1:
                     System.out.printf("%15s\n\n", " - VENTA DE PRODUCTOS - ");
                     //Metodo ventas
-
+                    ventas();
                     break;
                 case 2:
                     System.out.printf("%15s\n\n", " - SUBMENU CONTROL INVENTARIOS - ");
@@ -39,6 +39,11 @@ public class Menu {
             }
         } while (n != 3);
 
+    }
+    
+    public void ventas(){
+        System.out.println("\tVenta de Artículos");
+        
     }
 
     public void subMenuInv() {
