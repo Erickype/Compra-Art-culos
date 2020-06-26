@@ -1,10 +1,7 @@
-
 package proyectocompraarticulos;
-
 
 import ListaSecuencial.Lista;
 import java.util.Scanner;
-
 
 public class Menu {
 
@@ -24,7 +21,7 @@ public class Menu {
             switch (n) {
                 case 1:
                     //Metodo ventas
-                    
+
                     break;
                 case 2:
                     //Metodo sub menu inventario
@@ -59,19 +56,28 @@ public class Menu {
             switch (n) {
                 case 1:
                     //Metodo agregar producto
-                    
+
                     break;
                 case 2:
                     //Metodo borrar producto
-                    
+
                     break;
                 case 3:
                     //Metodo modificar producto
-                    
+                    String a1,
+                     a2;
+                    System.out.print("articulo a modificar? : ");
+                    a1 = t.nextLine();
+                    System.out.print(a1 + " cambiar por: ");
+                    a2 = t.nextLine();
+
+                    System.out.println(a1 + " se cambio por " + a2);
+
+                    System.out.println("cambiar otro articulo? (s/n): ");
                     break;
                 case 4:
                     //Metodo listar productos
-                                        l.listar();
+                    l.listar();
                     break;
                 case 5:
                     //regreso al menu principal, metodo menu
