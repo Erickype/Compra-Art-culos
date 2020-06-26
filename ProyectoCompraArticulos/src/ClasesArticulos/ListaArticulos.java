@@ -13,7 +13,7 @@ import ListaSecuencial.Nodo;
  *
  * @author Erick
  */
-public class Articulos extends Lista {
+public class ListaArticulos extends Lista {
 
     boolean registrarProducto(String nombre, double precio) {
         return this.insertar(new Articulo(nombre, precio));
