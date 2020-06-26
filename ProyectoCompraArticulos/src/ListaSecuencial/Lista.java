@@ -184,7 +184,7 @@ public class Lista {
         }
     }
     
-    void imprimir() {
+    void imprimir(){}
 
     public void listar() {
         if (this.primero == null) {
