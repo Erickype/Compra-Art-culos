@@ -161,7 +161,7 @@ public class Lista {
         return false;
     }
 
-    boolean Eliminar_Borrar(int pos ) {
+    public boolean eliminarBorrar(int pos ) {
          if (this.primero == null) {
             System.out.println("ERROR: ***** No existen datos que eliminar en la lista *** ");
         }

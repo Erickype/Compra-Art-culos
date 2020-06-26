@@ -66,6 +66,7 @@ public class Menu {
                 case 2:
                     System.out.printf("%15s\n\n", " - BORRAR PRODUCTO - ");
                     //Metodo borrar producto
+                   l.eliminarBorrar(n);
 
                     break;
                 case 3:
