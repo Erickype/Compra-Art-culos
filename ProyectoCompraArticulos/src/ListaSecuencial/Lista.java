@@ -162,18 +162,18 @@ public class Lista {
         return false;
     }
 
-    public boolean eliminarBorrar(int pos ) {
+    public boolean eliminarBorrar(int a ) {
          
-        if (this.primero == null || pos < 0) {
+        if (this.primero == null || a < 0) {
             return false;
         }
-        if (pos == 0) {
+        if (a == 0) {
             this.primero = this.primero.siguiente;
             return true;
         }
         int posActual = 1;
         Nodo aux = this.primero;
-        while (posActual < pos && aux != null) {
+        while (posActual < a && aux != null) {
             aux = aux.siguiente;
             posActual++;
         }
@@ -186,15 +186,15 @@ public class Lista {
     }
     
     
-     public Object borrarEliminar() {
+     public void borrarEliminar() {
          
         int a = 0;
         
-         System.out.println("ingrese la posicion a eliminar");
+         System.out.println("/nIngrese la posicion a eliminar");
          Scanner teclado= new Scanner(System.in);
          a= teclado.nextInt();
          eliminarBorrar(a );
-         return a;
+         
     }
 
     public void modificar(String dato, String cambio) {
