@@ -161,10 +161,36 @@ public class Lista {
         return false;
     }
 
+
+    boolean Eliminar_Borrar(int pos ) {
+        if (this.primero == null || pos < 0) {
+            return false;
+        }
+        if (pos == 0) {
+            this.primero = this.primero.siguiente;
+            return true;
+        }
+        int posActual = 1;
+        Nodo aux = this.primero;
+        while (posActual < pos && aux != null) {
+            aux = aux.siguiente;
+            posActual++;
+        }
+        if (aux != null && aux.siguiente != null) {
+            aux.siguiente = aux.siguiente.siguiente;
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    void imprimir(){}
+
     public void listar() {
         if (this.primero == null) {
             System.out.println("ERROR: *** No existen datos en la lista *** ");
         }
+
         if (this.primero != null) {
             Nodo aux = this.primero;
             do {

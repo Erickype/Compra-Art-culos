@@ -18,7 +18,6 @@ public class CompraArticulos {
         // TODO code application logic here
         Menu m = new Menu();
         m.menu();
-
     }
     
 }
