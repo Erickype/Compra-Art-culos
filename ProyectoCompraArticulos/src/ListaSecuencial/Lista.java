@@ -161,8 +161,7 @@ public class Lista {
         return false;
     }
 
-
-    boolean Eliminar_Borrar(int pos ) {
+    boolean Eliminar_Borrar(int pos) {
         if (this.primero == null || pos < 0) {
             return false;
         }
@@ -183,8 +182,26 @@ public class Lista {
             return false;
         }
     }
-    
-    void imprimir(){}
+
+    public void modificar(String dato, String cambio) {
+        if (this.primero == null) {
+            System.out.println("vacio");
+        } else {
+
+            if (this.primero.dato == dato) {
+                this.primero.dato = cambio;
+
+            } else {
+                Nodo aux = this.primero;
+                while (aux.siguiente != null) {
+                    if (aux.siguiente.dato == dato) {
+                        aux.siguiente.dato = cambio;
+                    }
+                    aux = aux.siguiente;
+                }
+            }
+        }
+    }
 
     public void listar() {
         if (this.primero == null) {
